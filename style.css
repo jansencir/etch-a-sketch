@@ -42,13 +42,12 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: green;
 }
 
 .grid-row {
     flex: 1;
     background-color: silver;
-    outline: 0.5px solid grey;
+    outline: 0.5px solid lightgray;
 }
 
 .hover {
