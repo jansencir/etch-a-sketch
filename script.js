@@ -18,4 +18,11 @@ function createGrid(grid) {
     }
 };
 
+container.addEventListener("mouseover", (event) => {
+    let target = event.target;
+    if (target.classList.contains("grid-row")) {
+        target.classList.add("hover");
+    }
+});
+
 createGrid();
