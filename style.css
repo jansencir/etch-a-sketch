@@ -2,6 +2,10 @@ body {
     background-color: slategrey;
 }
 
+* {
+    outline: 1px solid greenyellow;
+}
+
 .shell {
     background-color: crimson;
     width: 850px;
@@ -12,7 +16,6 @@ body {
 .container {
     display: flex;
     margin-inline: auto;
-    background-color: silver;
     height: 600px;
     width: 600px;
 }
@@ -37,4 +40,16 @@ body {
     color: goldenrod;
     font-size: 50px;
     margin: 0;
+}
+
+.grid-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: green;
+}
+
+.grid-row {
+    flex: 1;
+    background-color: silver;
 }
