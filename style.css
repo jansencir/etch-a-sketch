@@ -2,10 +2,37 @@ body {
     background-color: slategrey;
 }
 
+.shell {
+    background-color: crimson;
+    width: 850px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
 .container {
     display: flex;
     margin-inline: auto;
-    background-color: red;
+    background-color: silver;
     height: 600px;
     width: 600px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.toy-button {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+#toy-name {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 50px;
+    margin: 0;
 }
