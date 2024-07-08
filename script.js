@@ -50,5 +50,16 @@ resizeBtn.addEventListener("click", () => {
     }
 });
 
+function resetGrid() {
+    const columns = document.querySelectorAll(".grid-column");
+    columns.forEach((column) => {
+        column.childNodes.forEach((row) => {
+            row.classList.remove("hover");
+        })
+    });
+}
+
+const resetBtn = document.querySelector(".reset")
+resetBtn.addEventListener("click", resetGrid);
 
 createGrid();
