@@ -25,4 +25,30 @@ container.addEventListener("mouseover", (event) => {
     }
 });
 
+function gridAsk() {
+    let askUser = prompt("Enter a Value Between 1-100 to Resize Grid: ");
+    if (askUser === "" || isNaN(askUser) || askUser < 1 || askUser > 100) {
+        alert("That was not a valid input.")
+        return null;
+    } else {
+        return askUser;}
+};
+
+function removeGrid() {
+    const columns = document.querySelectorAll(".grid-column");
+    for (i of columns) {
+        container.removeChild(i);
+    }
+};
+
+const resizeBtn = document.querySelector(".resize");
+resizeBtn.addEventListener("click", () => {
+    let grid = gridAsk();
+    if (grid !== null) {
+        removeGrid();
+        createGrid(grid);
+    }
+});
+
+
 createGrid();
